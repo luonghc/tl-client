@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@trello/common": ["libs/common/src/index.ts"]
+      "@trello/common": ["libs/common/src/index.ts"],
+      "@trello/core": ["libs/core/src/index.ts"],
+      "@trello/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
