@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@trello/common": ["libs/common/src/index.ts"],
+      "@trello/auth/data-access": ["libs/auth/data-access/src/index.ts"],
+      "@trello/common/app-init": ["libs/common/app-init/src/index.ts"],
       "@trello/core": ["libs/core/src/index.ts"],
+      "@trello/home/feature": ["libs/home/feature/src/index.ts"],
       "@trello/ui": ["libs/ui/src/index.ts"]
     }
   },
