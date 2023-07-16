@@ -6,7 +6,7 @@ import dts from 'vite-plugin-dts';
 import * as path from 'path';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/common',
+  cacheDir: '../../../node_modules/.vite/common-app-init',
 
   plugins: [
     dts({
@@ -16,7 +16,7 @@ export default defineConfig({
     }),
     react(),
     viteTsConfigPaths({
-      root: '../../',
+      root: '../../../',
     }),
   ],
 
@@ -24,7 +24,7 @@ export default defineConfig({
   // worker: {
   //  plugins: [
   //    viteTsConfigPaths({
-  //      root: '../../',
+  //      root: '../../../',
   //    }),
   //  ],
   // },
@@ -35,7 +35,7 @@ export default defineConfig({
     lib: {
       // Could also be a dictionary or array of multiple entry points.
       entry: 'src/index.ts',
-      name: 'common',
+      name: 'common-app-init',
       fileName: 'index',
       // Change this to the formats you want to support.
       // Don't forget to update your package.json as well.
