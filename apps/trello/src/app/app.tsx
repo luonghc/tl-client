@@ -8,6 +8,7 @@ import {
 import { useEffect } from 'react';
 import { HomeFeature } from '@trello/home/feature';
 import { AppInit } from '@trello/common/app-init';
+import { httpClient } from '@trello/core';
 
 export function App() {
   const routes = useRoutes([
@@ -20,6 +21,8 @@ export function App() {
   useEffect(() => {
     const onInit = async () => {
       await AppInit.initApp();
+      const resp = await httpClient.get('/board');
+      console.log(resp);
     };
 
     onInit();
