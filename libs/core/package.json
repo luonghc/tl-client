@@ -8,5 +8,8 @@
       "import": "./index.mjs",
       "require": "./index.js"
     }
+  },
+  "dependencies": {
+    "@stomp/stompjs": "^7.0.0"
   }
 }
